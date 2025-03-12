@@ -1,0 +1,199 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #f39c12;
+}
+
+/* Sections */
+section {
+    padding: 80px 10%;
+    min-height: 100vh;
+}
+
+/* Home Section */
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home-left h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.home-left p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.download-btn {
+    padding: 10px 20px;
+    background: #f39c12;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.download-btn:hover {
+    background: #e67e22;
+}
+
+.home-right img {
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+/* About Section */
+.about {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.about-left img {
+    width: 250px;
+    border-radius: 50%;
+}
+
+.about-right h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.about-right ul {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.about-right ul li {
+    margin-bottom: 5px;
+}
+
+.btn {
+    padding: 10px 15px;
+    background: #f39c12;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+/* Skills Section */
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.skills-category h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.skill-bar {
+    background: #ddd;
+    border-radius: 5px;
+    height: 8px;
+    width: 100%;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.skill-fill {
+    background: #f39c12;
+    height: 100%;
+    border-radius: 5px;
+    width: 80%; /* Adjust width per skill */
+}
+
+/* Contact Section */
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background: #f39c12;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background: #e67e22;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+}
+
+.footer-social a {
+    color: #f39c12;
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    .home, .about, .contact-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
